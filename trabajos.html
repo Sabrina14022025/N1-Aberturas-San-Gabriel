@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Nuestros Trabajos - Aberturas San Gabriel</title>
+  <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+
+  <main>
+    <section class="intro-trabajos">
+      <h2>Nuestros Trabajos</h2>
+      <p>Acá te mostramos algunos de los proyectos reales que realizamos. Puertas, ventanas, cerramientos y más, hechos con dedicación y calidad.</p>
+    </section>
+  </main>
+
+  <section id="trabajos">
+    <h3>Galería de Trabajos</h3>
+    <div class="galeria">
+      <!-- Las imágenes de la galería -->
+      <div class="imagen" onclick="openModal(); currentSlide(1)">
+        <img src="Img/Trabajosterminados/Ventanaaluminio.jpg" alt="Ventana Aluminio">
+      </div>
+      <div class="imagen" onclick="openModal(); currentSlide(2)">
+        <img src="Img/Trabajosterminados/Puertacuatro.jpg" alt="Puerta Cuatro">
+      </div>
+      <div class="imagen" onclick="openModal(); currentSlide(3)">
+        <img src="Img/Trabajosterminados/Cerramiento5.jpg" alt="Cerramiento 5">
+      </div>
+      <div class="imagen" onclick="openModal(); currentSlide(4)">
+        <img src="Img/Trabajosterminados/Cerramiento6.jpg" alt="Cerramiento 6">
+      </div>
+      <div class="imagen" onclick="openModal(); currentSlide(5)">
+        <img src="Img/Trabajosterminados/Ventanalblanco.jpg" alt="Ventanal Blanco">
+      </div>
+      <div class="imagen" onclick="openModal(); currentSlide(6)">
+        <img src="Img/Trabajosterminados/Puertacorrediza.jpg" alt="Puerta Corrediza">
+      </div>
+      <div class="imagen" onclick="openModal(); currentSlide(7)">
+        <img src="Img/Trabajosterminados/Cerramiento7.jpg" alt="Cerramiento 7">
+      </div>
+      <div class="imagen" onclick="openModal(); currentSlide(8)">
+        <img src="Img/Trabajosterminados/Ventanascolores.jpg" alt="Ventanas Colores">
+      </div>
+      <div class="imagen" onclick="openModal(); currentSlide(9)">
+        <img src="Img/Trabajosterminados/Ventanasconstruccion.jpg" alt="Ventanas Construcción">
+      </div>
+      <div class="imagen" onclick="openModal(); currentSlide(10)">
+        <img src="Img/Trabajosterminados/Ventanales.jpg" alt="Ventanales">
+      </div>
+      <div class="imagen" onclick="openModal(); currentSlide(11)">
+        <img src="Img/Trabajosterminados/Vidrios.jpg" alt="Vidrios">
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal (cuadro de imagen ampliada) -->
+  <div id="myModal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+      <div class="mySlides">
+        <img src="Img/Trabajosterminados/Ventanaaluminio.jpg" alt="Ventana Aluminio">
+      </div>
+      <div class="mySlides">
+        <img src="Img/Trabajosterminados/Puertacuatro.jpg" alt="Puerta Cuatro">
+      </div>
+      <div class="mySlides">
+        <img src="Img/Trabajosterminados/Cerramiento5.jpg" alt="Cerramiento 5">
+      </div>
+      <div class="mySlides">
+        <img src="Img/Trabajosterminados/Cerramiento6.jpg" alt="Cerramiento 6">
+      </div>
+      <div class="mySlides">
+        <img src="Img/Trabajosterminados/Ventanalblanco.jpg" alt="Ventanal Blanco">
+      </div>
+      <div class="mySlides">
+        <img src="Img/Trabajosterminados/Puertacorrediza.jpg" alt="Puerta Corrediza">
+      </div>
+      <div class="mySlides">
+        <img src="Img/Trabajosterminados/Cerramiento7.jpg" alt="Cerramiento 7">
+      </div>
+      <div class="mySlides">
+        <img src="Img/Trabajosterminados/Ventanascolores.jpg" alt="Ventanas Colores">
+      </div>
+      <div class="mySlides">
+        <img src="Img/Trabajosterminados/Ventanasconstruccion.jpg" alt="Ventanas Construcción">
+      </div>
+      <div class="mySlides">
+        <img src="Img/Trabajosterminados/Ventanales.jpg" alt="Ventanales">
+      </div>
+      <div class="mySlides">
+        <img src="Img/Trabajosterminados/Vidrios.jpg" alt="Vidrios">
+      </div>
+    </div>
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+
+  <a href="index.html">
+    <button>Volver al inicio</button>
+  </a>
+
+  <footer>
+    <p>&copy; 2025 Aberturas San Gabriel. Todos los derechos reservados.</p>
+  </footer>
+
+  <!-- Código JavaScript debe ir dentro de la etiqueta <script> -->
+  <script>
+    let slideIndex = 1;
+
+    function openModal() {
+      document.getElementById("myModal").style.display = "block";
+    }
+
+    function closeModal() {
+      document.getElementById("myModal").style.display = "none";
+    }
+
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function showSlides(n) {
+      let slides = document.getElementsByClassName("mySlides");
+      if (n > slides.length) { slideIndex = 1 }
+      if (n < 1) { slideIndex = slides.length }
+      for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slides[slideIndex - 1].style.display = "block";
+    }
+  </script>
+
+</body>
+</html>

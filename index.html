@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aberturas San Gabriel</title>
+  <link rel="stylesheet" href="CSS/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+  <header>
+    <img src="img/Logo1.jpg" alt="Logo izquierdo" class="logo-izq">
+    <h1>Aberturas <span class="cursiva">San Gabriel</span></h1>
+    <img src="img/Logo1.jpg" alt="Logo derecho" class="logo-der">
+<nav>
+  <ul>
+    <li><a href="trabajos.html" target="_blank">Nuestros Trabajos</a></li>
+    <li><a href="diferencias.html" target="_blank">Qué nos diferencia</a></li>
+    <li><a href="servicios.html" target="_blank">Servicios</a></li>
+    <li><a href="#trabajos">¿Qué fabricamos?</a></li>
+    <li><a href="#contacto">Contacto</a></li>
+  </ul>
+</nav>
+
+
+  </header>
+ 
+<section class="presentacion">
+  <h2>Aberturas de <span>Calidad</span></h2>
+  <h3>Fabricación de puertas y ventanas a medida</h3>
+  <p>Con 12 años de trayectoria, transformamos tus ideas en realidad.</p>
+  <img src="img/Frentelocal.png" alt="Frente del local" class="frente-local">
+
+</section>
+
+  <section id="nosotros">
+    <h3>¡Te damos la bienvenida!</h3>
+    <p>Desde hace 12 años nos especializamos en aberturas, ofreciendo atención personalizada para ayudarte a tomar la mejor decisión. Podés consultarnos sin compromiso por presupuestos, productos o asesoramiento. Queremos que tu experiencia con nosotros sea clara, sencilla y satisfactoria.</p>
+
+    <h3>Nuestra Historia</h3>
+    <p>En No somos una fábrica más. Apostamos a los detalles, al trato directo con cada cliente, y a construir desde el trabajo honesto. Fabricamos puertas, ventanas, cerramientos de galerías, frentes vidriados, mosquiteros, mamparas y más. Hacemos tanto productos estándar como trabajos especiales y a medida, lo que nos distingue dentro del rubro.</p>
+    <p>No somos una fábrica más. Apostamos a los detalles, al trato directo con cada cliente, y a construir desde el trabajo honesto. Fabricamos puertas, ventanas, cerramientos de galerías, frentes vidriados, mosquiteros, mamparas y más. Hacemos tanto productos estándar como trabajos especiales y a medida, lo que nos distingue dentro del rubro.</p>
+    <h3>Sobre los tiempos de entrega</h3>
+<p>
+  Cada producto que realizamos está pensado para durar. Por eso priorizamos la calidad por sobre la rapidez. A veces, dependiendo del tipo de trabajo y la demanda del momento, los plazos pueden extenderse más de lo habitual. En esos casos, elegimos siempre la transparencia: te informamos los tiempos reales desde el inicio y cumplimos con nuestra palabra.
+</p>
+
+<p class="frase-destacada">“Calidad real, tiempos reales”</p>
+
+<p>
+  Nuestro compromiso es con vos y con tu obra. Te acompañamos en cada etapa, ofreciendo asesoramiento claro, materiales confiables y un producto bien hecho. Porque cuando un trabajo se hace con responsabilidad y pasión, los resultados se notan. Gracias por confiar en nosotros. A lo largo de estos 12 años, crecimos de la mano de quienes valoran el trabajo hecho con corazón.
+</p>
+
+  <section id="trabajos">
+  <h3>¿Qué fabricamos?</h3>
+
+  <!-- Puertas -->
+  <div class="trabajo">
+    <button onclick="toggleGaleria('galeria-puertas')">Puertas</button>
+    <div id="galeria-puertas" class="galeria oculto">
+      <img src="img/Puertas/Puertagranero1.avif" alt="Puerta 1" onclick="abrirLightbox(this.src, 'galeria-puertas')">
+      <img src="img/Puertas/puerta3.jpeg" alt="Puerta 2" onclick="abrirLightbox(this.src, 'galeria-puertas')">
+      <img src="img/Puertas/Puerta4.jpg" alt="Puerta 3" onclick="abrirLightbox(this.src, 'galeria-puertas')">
+    </div>
+  </div>
+
+  <!-- Ventanas -->
+  <div class="trabajo">
+    <button onclick="toggleGaleria('galeria-ventanas')">Ventanas</button>
+    <div id="galeria-ventanas" class="galeria oculto">
+      <img src="img/Ventanas/Ventanalmadera.jpg" alt="Ventana 1" onclick="abrirLightbox(this.src, 'galeria-ventanas')">
+      <img src="img/Ventanas/Ventanacuadros.jpeg" alt="Ventana 2" onclick="abrirLightbox(this.src, 'galeria-ventanas')">
+    </div>
+  </div>
+
+  <!-- Cerramientos -->
+  <div class="trabajo">
+    <button onclick="toggleGaleria('galeria-cerramientos')">Cerramientos de galerías</button>
+    <div id="galeria-cerramientos" class="galeria oculto">
+      <img src="img/cerramientosdegalerias/Cerramiento1.jpg" alt="Cerramiento 1" onclick="abrirLightbox(this.src, 'galeria-cerramientos')">
+      <img src="img/cerramientosdegalerias/cerramiento2.jpg" alt="Cerramiento 2" onclick="abrirLightbox(this.src, 'galeria-cerramientos')">
+      <img src="img/cerramientosdegalerias/Cerramiento3.jpg" alt="Cerramiento 3" onclick="abrirLightbox(this.src, 'galeria-cerramientos')">
+    </div>
+  </div>
+
+  <!-- Frentes vidriados -->
+  <div class="trabajo">
+    <button onclick="toggleGaleria('galeria-frentes')">Frentes vidriados</button>
+    <div id="galeria-frentes" class="galeria oculto">
+      <img src="img/Frentesvidriados/Frente1.jpeg" alt="Frente 1" onclick="abrirLightbox(this.src, 'galeria-frentes')">
+      <img src="img/Frentesvidriados/frente2.jpg" alt="Frente 2" onclick="abrirLightbox(this.src, 'galeria-frentes')">
+      <img src="img/Frentesvidriados/frente3.jpg" alt="Frente 3" onclick="abrirLightbox(this.src, 'galeria-frentes')">
+    </div>
+  </div>
+
+  <!-- Mosquiteros -->
+  <div class="trabajo">
+    <button onclick="toggleGaleria('galeria-mosquiteros')">Mosquiteros</button>
+    <div id="galeria-mosquiteros" class="galeria oculto">
+      <img src="img/Mosquiteros/Mosquitero.webp" alt="Mosquitero 1" onclick="abrirLightbox(this.src, 'galeria-mosquiteros')">
+      <img src="img/Mosquiteros/Mosquitero2.jpg" alt="Mosquitero 2" onclick="abrirLightbox(this.src, 'galeria-mosquiteros')">
+      <img src="img/Mosquiteros/Detallesmosquiteros1.png" alt="Mosquitero 3" onclick="abrirLightbox(this.src, 'galeria-mosquiteros')">
+    </div>
+  </div>
+
+  <!-- Mamparas -->
+  <div class="trabajo">
+    <button onclick="toggleGaleria('galeria-mamparas')">Mamparas</button>
+    <div id="galeria-mamparas" class="galeria oculto">
+      <img src="img/Mamparas/Mampara1.jpg" alt="Mampara 1" onclick="abrirLightbox(this.src, 'galeria-mamparas')">
+      <img src="img/Mamparas/mampara2.jpeg" alt="Mampara 2" onclick="abrirLightbox(this.src, 'galeria-mamparas')">
+      <img src="img/Mamparas/Mampara3.jpg" alt="Mampara 3" onclick="abrirLightbox(this.src, 'galeria-mamparas')">
+    </div>
+  </div>
+</section>
+
+  <section class="flex-beneficios">
+  <div class="beneficio">
+    <i class="fas fa-headset"></i>
+    <h4>Asesoramiento Personalizado</h4>
+    <p>Te ayudamos a elegir lo que realmente necesitás. Nuestra experiencia en el rubro nos permite ofrecerte alternativas eficientes y productos de alta calidad.</p>
+  </div>
+
+  <div class="beneficio">
+    <i class="fas fa-pencil-ruler"></i>
+    <h4>Proyectos de Alta Complejidad</h4>
+    <p>Brindamos asesoramiento técnico en diseño y arquitectura, adaptándonos a los requerimientos específicos de obras exigentes.</p>
+  </div>
+
+  <div class="beneficio">
+    <i class="fas fa-star"></i>
+    <h4>Productos de Primera Línea</h4>
+    <p>Nuestras aberturas están fabricadas con materiales de excelente calidad, pensadas para durar y rendir al máximo.</p>
+  </div>
+
+  <div class="beneficio">
+    <i class="fas fa-truck"></i>
+    <h4>Envíos a Domicilio</h4>
+    <p>Hacemos llegar tu pedido a la dirección que nos indiques. Consultanos por cobertura y tiempos de entrega.</p>
+  </div>
+
+  <div class="beneficio">
+    <i class="fas fa-file-invoice-dollar"></i>
+    <h4>Presupuestos sin Cargo</h4>
+    <p>Cotizamos sin compromiso: productos, instalación y proyectos de obra. Queremos que tomes la mejor decisión, bien informado.</p>
+  </div>
+</section>
+
+<section id="contacto">
+  <h3 class="centrado-titulo">¿Querés que te contactemos?</h3>
+  <form class="formulario">
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" required>
+
+    <label for="email">Correo electrónico:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="telefono">Teléfono:</label>
+    <input type="tel" id="telefono" name="telefono">
+
+    <label for="mensaje">Mensaje:</label>
+    <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+    <button type="submit">Enviar</button>
+  </form>
+</section>
+
+<section id="servicios">
+  <h3>Cómo contactarnos</h3>
+  <p><strong>Dirección:</strong> Av. Belgrano Sur 501, X5885 Villa de Las Rosas, Córdoba</p>
+  <p><strong>Mail:</strong> gabriel_molinari@yahoo.com.ar</p>
+  <p><strong>Teléfono:</strong> +54 9 11 6226 5251</p>
+  <p><strong>Días y horarios:</strong> Lunes a Viernes de 08:00 a 16:00 hs. — Sábados y Domingos cerrado.</p>
+
+  <div class="mapa">
+    <iframe src="https://maps.google.com/maps?q=Villa%20de%20Las%20Rosas%2C%20C%C3%B3rdoba&t=&z=13&ie=UTF8&iwloc=&output=embed" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+  </div>
+
+</section>
+
+<footer>
+  <p>&copy; 2025 Aberturas San Gabriel. Todos los derechos reservados.</p>
+</footer>
+
+<!-- WhatsApp -->
+<div class="whatsapp">
+  <a href="https://wa.me/5491162265251" target="_blank">
+    <img src="Img/Logowhat.jpg" alt="WhatsApp">
+  </a>
+</div>
+
+<!-- TikTok -->
+<div class="tiktok">
+  <a href="https://www.tiktok.com/@aberturasangabriel?_t=ZM-8xhCFjIfOmE&_r=1" target="_blank">
+    <img src="img/Iconotiktok.png" alt="Síguenos en TikTok">
+  </a>
+</div>
+
+<!-- Facebook -->
+<div class="facebook">
+  <a href="https://www.facebook.com/share/v/16aECmMnbB/" target="_blank">
+    <img src="img/Iconoface.png" alt="Síguenos en Facebook">
+  </a>
+</div>
+
+<script>
+  function toggleGaleria(id) {
+    const galeria = document.getElementById(id);
+    galeria.classList.toggle('oculto');
+  }
+</script>
+
+<!-- VISOR DE IMÁGENES -->
+<div id="lightbox" class="lightbox oculto">
+  <span class="cerrar" onclick="cerrarLightbox()">&times;</span>
+  <img id="imagen-grande" src="" alt="Imagen ampliada">
+  <div class="controles">
+    <button onclick="cambiarImagen(-1)">&#10094;</button>
+    <button onclick="cambiarImagen(1)">&#10095;</button>
+  </div>
+</div>
+
+<!--  FINAL -->
+<script>
+  let imagenes = [];
+  let indiceActual = 0;
+
+  function toggleGaleria(id) {
+    const galeria = document.getElementById(id);
+    galeria.classList.toggle('oculto');
+  }
+
+  function abrirLightbox(src, grupo) {
+    imagenes = Array.from(document.querySelectorAll(`#${grupo} img`)).map(img => img.src);
+    indiceActual = imagenes.indexOf(src);
+    document.getElementById('imagen-grande').src = src;
+    document.getElementById('lightbox').classList.remove('oculto');
+  }
+
+  function cerrarLightbox() {
+    document.getElementById('lightbox').classList.add('oculto');
+  }
+
+  function cambiarImagen(direccion) {
+    indiceActual += direccion;
+    if (indiceActual < 0) indiceActual = imagenes.length - 1;
+    if (indiceActual >= imagenes.length) indiceActual = 0;
+    document.getElementById('imagen-grande').src = imagenes[indiceActual];
+  }
+</script>
+<a href="index.html">
+  <button>Volver al inicio</button>
+</a>
+
+</body>
+</html>
+
+
+</body>
+</html>
