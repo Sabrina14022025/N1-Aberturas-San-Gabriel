@@ -311,17 +311,17 @@ footer .mapa {
   background-color: #003f6f;
 }
 .flex-beneficios {
-  display: flex; 
-  flex-wrap: wrap; 
-  gap: 20px; 
-  justify-content: space-around; 
+  display: flex; /* Habilita Flexbox */
+  flex-wrap: wrap; /* Permite que los elementos se ajusten a nuevas filas si es necesario */
+  gap: 20px; /* Espacio entre los elementos */
+  justify-content: space-around; /* Distribuye el espacio entre los elementos de forma uniforme */
   padding: 40px 20px;
   background-color: #f0f5fa;
 }
 
 .beneficio {
-  flex: 1 1 300px; 
-  max-width: 400px; 
+  flex: 1 1 300px; /* Permite que los elementos ocupen al menos 300px y se expandan para llenar el espacio disponible */
+  max-width: 400px; /* Limita el tamaño máximo del elemento */
   background-color: #ffffff;
   border-left: 5px solid #005baa;
   padding: 20px;
@@ -331,9 +331,10 @@ footer .mapa {
 }
 
 .beneficio:hover {
-  transform: translateY(-5px); 
-  box-shadow: 0 8px 20px rgba(0,0,0,0.15); 
+  transform: translateY(-5px); /* Efecto de desplazamiento cuando el usuario pasa el cursor */
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15); /* Sombra ampliada para el hover */
 }
+
 
 .hero-mejorado {
   padding: 60px 20px 20px;
@@ -577,22 +578,25 @@ nav ul {
 }
 
 .galeria {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  margin-bottom: 20px;
+  display: flex; /* Activa Flexbox */
+  flex-wrap: wrap; /* Hace que las imágenes se ajusten cuando no hay suficiente espacio */
+  gap: 15px; /* Añade espacio entre las imágenes */
+  justify-content: center; /* Centra las imágenes en el contenedor */
+  padding: 20px;
 }
 
 .galeria img {
-  width: 200px;
+  width: 100%; /* Hace que la imagen ocupe todo el espacio del contenedor */
+  max-width: 200px; /* Limita el tamaño máximo de la imagen */
   border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
-  transition: transform 0.3s;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15); /* Sombra para las imágenes */
+  transition: transform 0.3s ease; /* Efecto de zoom al pasar el cursor */
 }
 
 .galeria img:hover {
-  transform: scale(1.05);
+  transform: scale(1.05); /* Efecto de ampliación al pasar el cursor */
 }
+
 
 .oculto {
   display: none;
@@ -665,9 +669,7 @@ nav ul {
   border-radius: 5px;
 }
 
-.oculto {
-  display: none;
-}
+
 .intro-trabajos {
   text-align: center;
   padding: 40px 20px;
@@ -1003,23 +1005,35 @@ button:hover {
   transition: background-color 0.3s ease;
 }
 nav ul {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 10px;
-  padding: 0;
-  list-style: none;
+  display: flex; /* Activa Flexbox */
+  justify-content: center; /* Centra los elementos de navegación */
+  list-style: none; /* Elimina los puntos de la lista */
+  padding-left: 0; /* Elimina el padding de la izquierda */
+  gap: 20px; /* Espacio entre los elementos */
+}
+
+nav ul li {
+  margin: 0; /* Elimina márgenes */
 }
 
 nav ul li a {
-  padding: 10px 15px;
-  display: block;
-  color: white;
-  background-color: #007BFF;
   text-decoration: none;
-  border-radius: 5px;
-  font-weight: bold;
+  color: white;
+  padding: 12px 18px;
+  display: block;
+  font-weight: 600;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: background 0.3s, transform 0.2s;
 }
+
+nav ul li a:hover {
+  background-color: #005baa; /* Cambia el color al pasar el cursor */
+  border-radius: 5px;
+  transform: scale(1.05); /* Efecto de escala */
+}
+
 @media (max-width: 768px) {
   nav ul {
     flex-direction: column;
